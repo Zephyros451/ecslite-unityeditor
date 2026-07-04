@@ -139,7 +139,7 @@ namespace Leopotam.EcsLite.UnityEditor.Templates {
             ProjectWindowUtil.StartNameEditingIfProjectWindowExists (0, action, fileName, icon, null);
         }
 
-        sealed class CustomEndNameAction : EndNameEditAction {
+        sealed class CustomEndNameAction : AssetCreationEndAction {
             [NonSerialized] public Action<string> Callback;
 
             public override void Action (int instanceId, string pathName, string resourceFile) {
