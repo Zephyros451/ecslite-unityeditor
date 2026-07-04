@@ -142,7 +142,7 @@ namespace Leopotam.EcsLite.UnityEditor.Templates {
         sealed class CustomEndNameAction : AssetCreationEndAction {
             [NonSerialized] public Action<string> Callback;
 
-            public override void Action (int instanceId, string pathName, string resourceFile) {
+            public override void Action (EntityId instanceId, string pathName, string resourceFile) {
                 Callback?.Invoke (pathName);
             }
         }
